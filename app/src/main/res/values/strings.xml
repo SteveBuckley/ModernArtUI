@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ModernArtUI</string>
+    <string name="more_info">More Information</string>
+    <string name="dialogue_message1">This UI was very loosely based on
+                                    Piet Mondrian\'s Composition a (1923)</string>
+    <string name="dialogue_message2">For more examples please click the \'Go To MoMA\'
+                                    button below.</string>
+    <string name="go_to_moma">Go To MoMA</string>
+    <string name="cancel">Not Now</string>
+    <string name="url">http://www.moma.org/m</string>
+    <string name="mond_url">http://www.moma.org/collection/artists/4057</string>
+</resources>

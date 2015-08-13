@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout for landscape mode
+    The actual modern art UI is split into fragments in order
+    to make the layout a bit more manageable especially for
+    landscape mode.
+
+    Portrait only shows one fragment, landscape all three
+    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100">
+        <fragment
+            android:name="uk.org.stevebuckley.modernartui.LeftFragment"
+            android:id="@+id/fragment1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_left" />
+        <fragment
+            android:name="uk.org.stevebuckley.modernartui.MiddleFragment"
+            android:id="@+id/fragment2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_left" />
+        <fragment
+            android:name="uk.org.stevebuckley.modernartui.RightFragment"
+            android:id="@+id/fragment3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_left" />
+    </LinearLayout>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/seekBar1" />
+
+</LinearLayout>
